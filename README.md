@@ -1,6 +1,6 @@
 # OrderbookRecorder
 
-[中文文档](README.cn.md)
+[中文文檔](README.cn.md)
 
 A high-performance orderbook data recorder for cryptocurrency exchanges, supporting multiple venues including Binance Spot, Binance Futures, and Lighter.
 
