@@ -1,0 +1,50 @@
+{
+  "base_data_dir": "orderbook_data",
+  "exchanges": {
+    "binance_spot": {
+      "enabled": true,
+      "symbols": ["BTCUSDT", "ETHUSDT", "BNBUSDT"],
+      "depth_levels": 20,
+      "buffer_size": 1000,
+      "flush_interval": 5
+    },
+    "binance_futures": {
+      "enabled": true,
+      "symbols": ["BTCUSDT", "ETHUSDT", "BNBUSDT"],
+      "depth_levels": 20,
+      "buffer_size": 1000,
+      "flush_interval": 5
+    },
+    "lighter": {
+      "enabled": false,
+      "market_ids": [1, 2],
+      "depth_levels": 10,
+      "buffer_size": 500,
+      "flush_interval": 3
+    }
+  },
+  "storage": {
+    "format": "parquet",
+    "compression": "snappy",
+    "file_rotation": "hourly",
+    "max_records_per_file": 100000,
+    "enable_compression": true
+  },
+  "performance": {
+    "async_write": true,
+    "batch_write": true,
+    "memory_limit_mb": 512,
+    "write_threads": 2
+  },
+  "display": {
+    "clear_screen": true,
+    "update_frequency": 1,
+    "show_stats_interval": 100
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "orderbook_recorder.log",
+    "max_size_mb": 100,
+    "backup_count": 5
+  }
+} 

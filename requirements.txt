@@ -1,0 +1,24 @@
+# 核心依賴
+asyncio
+websockets>=11.0
+pandas>=1.5.0
+pyarrow>=10.0.0
+tabulate>=0.9.0
+psutil>=5.9.0
+aiohttp>=3.8.0
+
+# 數據處理
+numpy>=1.24.0
+
+# Lighter API (可選 - 需要從源碼安裝)
+# lighter==1.0.0
+
+# 開發和測試依賴 (可選)
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+# 日誌和監控
+loguru>=0.7.0
+
+# 配置文件處理
+pyyaml>=6.0 
